@@ -1,0 +1,2 @@
+/* Scripting */
+alert("Hello World");
