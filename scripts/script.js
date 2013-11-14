@@ -1,2 +1,4 @@
 /* Scripting */
-alert("Hello World");
+(function(){
+    
+}());
