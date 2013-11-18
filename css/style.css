@@ -50,13 +50,17 @@ ul, ol {
 /* [.inner-content] ::start */
 .inner-content {  }
 
+.backslidr {
+    display: inline-block;
+    margin: 0 auto 20px;
+}
+
 .backslidr-container .backslidr-item {
     float: left;
     display: none;
 }
 
 .backslidr-th {
-    display: block;
     text-align: center;
 }
 

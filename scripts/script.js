@@ -1,3 +1,3 @@
-var item = document.getElementsByTagName("li");
+var item = document.getElementsByClassName("backslidr-item");
 
-alert(item.length);
+item[0].style.display = 'block';
