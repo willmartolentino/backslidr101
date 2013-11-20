@@ -1,28 +1,23 @@
-// var item = document.getElementsByClassName("backslidr-item");
+var item = document.getElementsByClassName("backslidr-item item");
 
-// for (var i = 0; i < 5; i++) {
-//     item[i].style.display = 'block';
+console.log(item);
+
+var slidrFadeIn = function () {
+    item[0].style.opacity = "1";
+}
+
+var slidrFadeOut = function () {
+    item[0].style.opacity = "0.1";
+}
+
+var slidrOpacity = function () {
+
+}
+
+// var slidrFadeIn.onclick = function () {
+
 // }
 
-// var thClick = document.getElementById("backslidr-th");
-
-
-function show () {
-    document.getElementById("backslidr-item-1").style.display = 'block';
-}
-
-function show () {
-    document.getElementById("backslidr-item-2").style.display = 'block';
-}
-
-function show () {
-    document.getElementById("backslidr-item-3").style.display = 'block';
-}
-
-function show () {
-    document.getElementById("backslidr-item-4").style.display = 'block';
-}
-
-function show () {
-    document.getElementById("backslidr-item-5").style.display = 'block';
-}
+// var slidrFadeOut.onclick = function () {
+    
+// }

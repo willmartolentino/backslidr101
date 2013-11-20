@@ -8,6 +8,7 @@ Cascading Style Sheets
 html, body {
     font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
     margin: 0;
+    height: 100%;
 }
 
 ul, ol {
@@ -19,7 +20,8 @@ ul, ol {
 /* [Headings] ::start */
 .hd-1 {
     margin: 0;
-    text-shadow: 1px 1px 1px #000, 3px 3px 5px #ccc;
+    color: #222;
+    text-shadow: 0 2px 3px #555;
 }
 /* [Headings] ::end */
 
@@ -35,10 +37,16 @@ ul, ol {
     margin: 0 5px;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: #000;
+    background-color: #555;
     color: #ccc;
     text-decoration: none;
     font-size: 1.2em;
+
+    box-shadow: 
+    0 1px 2px #222, /*bottom external highlight*/
+    0 -1px 1px #222, /*top external shadow*/ 
+    inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+    inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
 }
 .site-nav li a:hover {
     background: #ccc;
@@ -59,12 +67,15 @@ ul, ol {
 .backslidr {
     display: inline-block;
     margin: 0 auto 20px;
+    width: 960px;
+    height: 600px;
 }
 
-.backslidr-container .backslidr-item {
+.backslidr-items .backslidr-item {
     float: left;
     display: none;
 }
+.backslidr-items .backslidr-item:first-child { display: block; }
 
 .backslidr-th { text-align: center; }
 
