@@ -1,20 +1,33 @@
 var item = document.getElementsByClassName("backslidr-item item");
 
-console.log(item);
+// console.log(item);
 
-var slidrFadeIn = function () {
-    // setTimeout(function(){alert("Hey")}, 5000);
-    setTimeout(slidrOpacity(), 10000);
+var slidrBtn1 = function () {
+	item[4].style.display = "block";
+	item[0].style.display = "block";
 }
 
-var slidrFadeOut = function () {
-    item[0].style.opacity = "0.1";
+var slidrBtn2 = function () {
+	item[0].style.display = "none";
+	item[1].style.display = "block";
 }
 
-var slidrOpacity = function () {
-    item[0].style.opacity = "1";
-    item[0].style.border = "1px solid red";
+var slidrBtn3 = function () {
+	item[1].style.display = "none";
+	item[2].style.display = "block";
 }
+
+var slidrBtn4 = function () {
+	item[2].style.display = "none";
+	item[3].style.display = "block";
+}
+
+var slidrBtn5 = function () {
+	item[3].style.display = "none";
+	item[4].style.display = "block";
+}
+
+
 
 // var slidrFadeIn.onclick = function () {
 
