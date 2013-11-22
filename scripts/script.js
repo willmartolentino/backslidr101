@@ -2,13 +2,13 @@ var slidrBtns = document.getElementsByClassName ( 'backslidr-btn' ); // Selects 
 
 /*==========  This function will execute when the user click/s on any thumbnail images: Start  ==========*/
 var slidrFade = function ( event ) {
-    var targetElement = this.hash; // Refers to the element when the function executes (element that is anchored on the .backslidr-btn class) 
-													// or was simply being clicked by the user,  and it gets its property value (href) by setting a property called .hash
+    var targetElement = this.hash;  // Refers to the element when the function executes (element that is anchored on the .backslidr-btn class) 
+                                    // or was simply being clicked by the user,  and it gets its property value (href) by setting a property called .hash
      // console.log(targetElement);
      
-     //for (var i = 0; i < targetElement.length; i++) {
-	//	 targetElement[i];
-	 //}
+    //for (var i = 0; i < targetElement.length; i++) {
+    //  targetElement[i];
+    //}
 
     var targetVal = targetElement; // example value: #backslidr-item-1
     
@@ -17,8 +17,8 @@ var slidrFade = function ( event ) {
     console.log(delHash);
 
     var elFadeIn = function () {
-		document.getElementById( delHash ).style.display = " block ";
-		//document.getElementById( delHash ).style.opacity = " 0.5 ";
+        document.getElementById( delHash ).style.display = " block ";
+        //document.getElementById( delHash ).style.opacity = " 0.5 ";
     }
     
     setTimeout( elFadeIn, 3000 );
@@ -29,7 +29,7 @@ var slidrFade = function ( event ) {
     // };
     
 
-    event.preventDefault(); // Prevents the dafault event of the element
+    event.preventDefault(); // Prevents the default event of the element
 };
 
 for ( var i = 0; i < slidrBtns.length; i++ ) { // Loop
