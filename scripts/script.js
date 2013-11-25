@@ -1,7 +1,7 @@
 var slidrBtns = document.getElementsByClassName ( 'backslidr-btn' ); // Selects all HTML elements with a .backslidr-btn class
 
 /*==========  This function will execute when the user click/s on any thumbnail images: Start  ==========*/
-var slidrFade = function ( event ) {
+var slidrFadeIn = function ( event ) {
     var targetElement = this.hash;  // Refers to the element when the function executes (element that is anchored on the .backslidr-btn class) 
                                     // or was simply being clicked by the user,  and it gets its property value (href) by setting a property called .hash
      // console.log(targetElement);
@@ -22,18 +22,12 @@ var slidrFade = function ( event ) {
     }
     
     setTimeout( elFadeIn, 3000 );
-
-    // var el = document.getElementById("backslidr-items").childNodes;
-    // for (var j = 0; j < el.length; j++) {
-    // console.log(el[j].nodeName + " <br />");
-    // };
     
-
     event.preventDefault(); // Prevents the default event of the element
 };
 
 for ( var i = 0; i < slidrBtns.length; i++ ) { // Loop
-    slidrBtns[ i ].addEventListener( 'click', slidrFade, false ); // Add the event listener to all selected HTML elements with a .backslidr-btn class
+    slidrBtns[ i ].addEventListener( 'click', slidrFadeIn, false ); // Add the event listener to all selected HTML elements with a .backslidr-btn class
 }
 
 /*==========  This function will execute when the user click/s on any thumbnail images: End  ==========*/
