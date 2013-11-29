@@ -10,10 +10,8 @@ var slidrFadeIn = function ( event ) {
     console.log(targetValue);
 
     var elFadeIn = function () {
-		var targetActive = document.getElementById(targetValue);
-        targetActive.style.display = "block";
-        targetActive.className = "backslidr-item item active";
-        //document.getElementById(targetValue).style.opacity = " 0.5 ";
+        var targetActive = document.getElementById(targetValue);
+        targetActive.className += " active";
     };
     
     setTimeout( elFadeIn, 2000 );

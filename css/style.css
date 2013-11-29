@@ -73,6 +73,8 @@ ul, ol {
     height: 600px;
 }
 
+.backslidr-items .backslidr-item.active { display: block; }
+
 .backslidr-items .backslidr-item {
     float: left;
     display: none;
