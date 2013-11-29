@@ -12,6 +12,9 @@ var slidrFadeIn = function ( event ) {
     var elFadeIn = function () {
         var targetActive = document.getElementById(targetValue);
         targetActive.className += " active";
+        if (targetActive.classList.contains("active")) {
+			alert('This element has an active class');
+		}
     };
     
     setTimeout( elFadeIn, 2000 );
